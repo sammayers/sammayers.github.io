@@ -1,0 +1,39 @@
+{
+  "readmeUrl": "https://raw.githubusercontent.com/cveinnt/cveinnt/master/README.md",
+  "title": "Welcome",
+  "name": "Samantha Mayers",
+  "ascii": "liveterm",
+  "social": {
+    "github": "sammayers",
+    "linkedin": "sammayers"
+  },
+  "email": "smayers@albany.edu",
+  "ps1_hostname": "sammayers",
+  "ps1_username": "visitor",
+  "repo": "https://github.com/sammayers",
+  "resume_url": "https://drive.google.com/file/d/1FunTF2g2-II6qUvwzLI2Hzp0jK3eT38y/view?usp=sharing",
+  "donate_urls": {
+    "paypal": "https://paypal.me/",
+    "patreon": "https://patreon.com/"
+  },
+  "colors": {
+    "light": {
+      "background": "#FBF1C9",
+      "foreground": "#3C3836",
+      "yellow": "#D79921",
+      "green": "#98971A",
+      "gray": "#7C6F64",
+      "blue": "#458588",
+      "red": "#CA2124"
+    },
+    "dark": {
+      "background": "#2E3440",
+      "foreground": "#E5E9F0",
+      "yellow": "#5E81AC",
+      "green": "#A3BE8C",
+      "gray": "#88C0D0",
+      "blue": "#EBCB8B",
+      "red": "#BF616A"
+    }
+  }
+}
