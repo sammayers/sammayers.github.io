@@ -7,7 +7,7 @@
     "url": "https://sam.mayers.is",
     "email": "sam.karger.mayers@gmail.com"
   },
-  "homepage": "http://xprotectszn.github.io/",
+  "homepage": "http://xprotectszn.github.io/public",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -15,7 +15,7 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",
-"deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "prepare": "husky install"
   },
   "dependencies": {
