@@ -3,16 +3,19 @@
   "version": "0.1.0",
   "license": "MIT",
   "author": {
-    "name": "Samantha Mayers",
-    "url": "https://cveinnt.com",
-    "email": "smayers@albany.edu"
+    "name": "Sam Mayers",
+    "url": "https://sam.mayers.is",
+    "email": "sam.karger.mayers@gmail.com"
   },
+  "homepage": "http://xprotectszn.github.io/public",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "export": "next export",
     "start": "next start",
     "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "npm run build;npm run export;gh-pages -d out",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -20,7 +23,8 @@
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0",
-    "react-icons": "^4.3.1"
+    "react-icons": "^4.3.1",
+    "yarn": "^1.22.21"
   },
   "devDependencies": {
     "@types/node": "17.0.32",
@@ -34,6 +38,7 @@
     "eslint-plugin-next": "^0.0.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
+    "gh-pages": "^6.1.1",
     "husky": "^8.0.1",
     "postcss": "^8.4.13",
     "prettier": "^2.6.2",
