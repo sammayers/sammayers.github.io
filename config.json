@@ -1,15 +1,15 @@
 {
   "readmeUrl": "https://raw.githubusercontent.com/cveinnt/cveinnt/master/README.md",
   "title": "Welcome",
-  "name": "Samantha Mayers",
+  "name": "Sam Mayers",
   "ascii": "liveterm",
   "social": {
     "github": "sammayers",
     "linkedin": "sammayers"
   },
   "email": "smayers@albany.edu",
-  "ps1_hostname": "sammayers",
-  "ps1_username": "visitor",
+  "ps1_hostname": "mayers",
+  "ps1_username": "sam",
   "repo": "https://github.com/sammayers",
   "resume_url": "https://drive.google.com/file/d/1FunTF2g2-II6qUvwzLI2Hzp0jK3eT38y/view?usp=sharing",
   "donate_urls": {
