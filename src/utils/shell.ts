@@ -18,7 +18,7 @@ export const shell = async (
     if(window.screen.availWidth <= 500 || window.screen.availHeight <= 500){
     setHistory(
       `shell: command not found: ${args[0]}.
-Try 'help' to get started.`,
+Try 'help' to get started. :-)`,
     );
     } else {
       setHistory(

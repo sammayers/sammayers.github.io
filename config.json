@@ -4,18 +4,16 @@
   "name": "Sam Mayers",
   "ascii": "liveterm",
   "social": {
-    "github": "sammayers",
-    "linkedin": "sammayers"
+    "github": "xprotectszn",
+    "linkedin": "sammayers",
+    "keybase": "mac0s"
   },
-  "email": "smayers@albany.edu",
-  "ps1_hostname": "mayers",
+  "email": "sam.karger.mayers@gmail.com",
+  "ps1_hostname": "sammayers",
   "ps1_username": "sam",
-  "repo": "https://github.com/sammayers",
-  "resume_url": "https://drive.google.com/file/d/1FunTF2g2-II6qUvwzLI2Hzp0jK3eT38y/view?usp=sharing",
-  "donate_urls": {
-    "paypal": "https://paypal.me/",
-    "patreon": "https://patreon.com/"
-  },
+  "repo": "https://github.com/xprotectszn",
+  "resume_url": "https://drive.google.com/file/d/1Si3OHewBeQr6neDQXQIL5fy_vf5uCs8I/view",
+  "TINotes": "https://book.mayers.is/",
   "colors": {
     "light": {
       "background": "#FBF1C9",

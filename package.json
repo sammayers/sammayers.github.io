@@ -5,7 +5,7 @@
   "author": {
     "name": "Sam Mayers",
     "url": "https://cveinnt.com",
-    "email": "smayers@albany.edu"
+    "email": "sam.karger.mayers@gmail.com"
   },
   "scripts": {
     "dev": "next dev",
@@ -13,7 +13,8 @@
     "export": "next export",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "github_deploy" : "rm -rf .next/cache/ docs/; npm run build;npm run export; mv out docs;cp .nojekyll docs; git add -A;git commit -m \"asd\"; git push"
   },
   "dependencies": {
     "axios": "^0.27.2",

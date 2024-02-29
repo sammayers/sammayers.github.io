@@ -4,7 +4,7 @@ import * as bin from './index';
 import config from '../../../config.json';
 
 // Help
-export const help = async (args: string[]): Promise<string> => {
+export const ls = async (args: string[]): Promise<string> => {
   const commands = Object.keys(bin).sort().join(', ');
   var c = '';
   for (let i = 1; i <= Object.keys(bin).sort().length; i++) {
@@ -16,9 +16,6 @@ export const help = async (args: string[]): Promise<string> => {
   }
   return `Welcome! Here are all the available commands:
 \n${c}\n
-[tab]: trigger completion. \n
-[ctrl+l]/clear: clear terminal.\n
-Type 'sumfetch' to display summary.
 `;
 };
 
@@ -32,22 +29,20 @@ export const repo = async (args: string[]): Promise<string> => {
 export const about = async (args: string[]): Promise<string> => {
   if(window.screen.availWidth <= 500 || window.screen.availHeight <= 500){
   return `Hi, I am ${config.name}. 
-Welcome to my website! I am currently a senior
-at the University at Albany studying Digital
-Forensics & Cybersecurity!
+I am currently a Vulnerability Researcher at Kandji. 
 
 More about me:
 'sumfetch' - short summary.
 'resume' - my latest resume.
-'readme' - my github readme.`;
+'github' - my github readme.`;
   } else {
     return `Hi, I am ${config.name}. 
-    Welcome to my website! I am currently a senior at the University at Albany studying Digital Forensics & Cybersecurity!
-    More about me:
+I am currently a Vulnerability Researcher at Kandji.
+More about me:
     
-    'sumfetch' - short summary.
-    'resume' - my latest resume.
-    'readme' - my github readme.`;
+'sumfetch' - short summary.
+'resume' - my resume.
+'github' - my github.`;
   }
 
 };
@@ -84,18 +79,12 @@ export const whoami = async (args: string[]): Promise<string> => {
   return `${config.ps1_username}`;
 };
 
-export const ls = async (args: string[]): Promise<string> => {
-  return `a
-bunch
-of
-fake
-directories
+export const help = async (args: string[]): Promise<string> => {
+  return `
+[tab]: trigger completion. \n
+[ctrl+l]/clear: clear terminal.\n
+Type 'sumfetch' to display summary.
 `;
-};
-
-export const cd = async (args: string[]): Promise<string> => {
-  return `unfortunately, i cannot afford more directories.
-if you want to help, you can type 'donate'.`;
 };
 
 export const date = async (args: string[]): Promise<string> => {
@@ -120,6 +109,10 @@ export const emacs = async (args?: string[]): Promise<string> => {
 
 export const sudo = async (args?: string[]): Promise<string> => {
   return `Permission denied: With great power comes... no responsibility? `;
+};
+
+export const book = async (args?: string[]): Promise<string> => {
+  return `vist book`;
 };
 
 // Banner
