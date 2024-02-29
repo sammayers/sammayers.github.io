@@ -7,7 +7,7 @@
     "url": "https://sam.mayers.is",
     "email": "sam.karger.mayers@gmail.com"
   },
-  "homepage": "http://xprotectszn.github.io/public",
+  "homepage": "http://xprotectszn.github.io/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
