@@ -28,23 +28,22 @@ export const repo = async (args: string[]): Promise<string> => {
 // About
 export const about = async (args: string[]): Promise<string> => {
   if(window.screen.availWidth <= 500 || window.screen.availHeight <= 500){
-  return `Hi, I am ${config.name}. 
-I am currently a Vulnerability Researcher at Kandji. 
-
-More about me:
+  return `Hi, I am ${config.name}. \n
+I am currently a Vulnerability Researcher at Kandji. \n
+More about me:  \n
 'sumfetch' - short summary.
-'resume' - my latest resume.
-'github' - my github readme.`;
+'notes' - my threat intel notes/blog
+'resume' - my resume.
+'github' - my github.`;
   } else {
-    return `Hi, I am ${config.name}. 
-I am currently a Vulnerability Researcher at Kandji.
-More about me:
-    
+    return `Hi, I am ${config.name}. \n
+I am currently a Vulnerability Researcher at Kandji. \n
+More about me:  \n
 'sumfetch' - short summary.
+'notes' - my threat intel notes/blog
 'resume' - my resume.
 'github' - my github.`;
   }
-
 };
 
 export const resume = async (args: string[]): Promise<string> => {
@@ -81,6 +80,7 @@ export const whoami = async (args: string[]): Promise<string> => {
 
 export const help = async (args: string[]): Promise<string> => {
   return `
+Type 'ls; to list all commands. \n
 [tab]: trigger completion. \n
 [ctrl+l]/clear: clear terminal.\n
 Type 'sumfetch' to display summary.
@@ -111,8 +111,16 @@ export const sudo = async (args?: string[]): Promise<string> => {
   return `Permission denied: With great power comes... no responsibility? `;
 };
 
-export const book = async (args?: string[]): Promise<string> => {
-  return `vist book`;
+export const blog = async (args?: string[]): Promise<string> => {
+  window.open(`https://book.mayers.is`);
+
+  return 'Opening Threat Intel Notes/Blog...';
+};
+
+export const notes = async (args?: string[]): Promise<string> => {
+  window.open(`https://book.mayers.is/`);
+
+  return 'Opening Threat Intel Notes/Blog...';
 };
 
 // Banner
@@ -130,6 +138,7 @@ export const banner = (args?: string[]): string => {
 
   
 Type 'sumfetch' to display summary.
+Type 'notes' to visit my threat intel notes/blog page 
 Type 'help' to see the list of available commands.
 Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for the Github repository.
    `;
@@ -146,6 +155,7 @@ Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline"
 
   
 Type 'sumfetch' to display summary.
+Type 'notes' to visit my threat intel notes/blog page 
 Type 'help' to see the list of available commands.
 Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for the Github repository.
 `;
